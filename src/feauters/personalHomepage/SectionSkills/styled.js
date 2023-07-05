@@ -33,14 +33,5 @@ export const Item = styled.li`
   display: flex;
   color: ${({ theme }) => theme.primary.text};
   list-style-type: none;
-  &::before {
-    content: "";
-    display: inline-block;
-    align-self: center;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    margin-right: 16px;
-    background-color: ${({ theme }) => theme.primaryBlue.background};
-  }
+
 `;

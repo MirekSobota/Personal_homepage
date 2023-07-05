@@ -1,11 +1,15 @@
 import { PersonalHomepage } from "./feauters/personalHomepage";
 import { GlobalStyle } from "./feauters/GlobalStyled";
+import { ThemeProvider } from "styled-components";
+import { lightTheme } from "./theme";
 
 function App() {
   return (
     <>
-      <GlobalStyle />
-      <PersonalHomepage />
+      <ThemeProvider theme={lightTheme}>
+        <GlobalStyle />
+        <PersonalHomepage />
+      </ThemeProvider>
     </>
   );
 }

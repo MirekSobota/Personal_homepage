@@ -1,0 +1,46 @@
+import styled from "styled-components";
+
+export const Wrapper = styled.section`
+max-width: 2016px;
+border-radius: 4px;
+box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03), 0px -2px 50px 0px rgba(9, 10, 51, 0.02);
+background: ${({ theme }) => theme.section.background};
+`;
+
+export const SectionHeader = styled.h2`
+color: ${({ theme }) => theme.header.text};
+letter-spacing: 1.5px;
+padding: 32px 0 0 32px;
+font-size: 30px;
+font-weight: 900;
+`;
+
+export const Divider =  styled.span`
+max-width: 1151px;
+height: 1px;
+`;
+
+export const List = styled.ul`
+  display: grid;
+  grid-template-columns: auto 300px auto;
+  gap: 8px 115px;
+  grid-template-rows: repeat(8 1fr);
+  padding: 30px 32px;
+  margin-bottom: 72px;
+`;
+
+export const Item = styled.li`
+  display: flex;
+  color: ${({ theme }) => theme.primary.text};
+  list-style-type: none;
+  &::before {
+    content: "";
+    display: inline-block;
+    align-self: center;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-right: 16px;
+    background-color: ${({ theme }) => theme.primaryBlue.background};
+  }
+`;

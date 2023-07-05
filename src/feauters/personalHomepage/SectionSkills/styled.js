@@ -1,3 +1,5 @@
+import { ReactComponent as BulletIcon } from "./bullet.svg";
+
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
@@ -34,4 +36,9 @@ export const Item = styled.li`
   color: ${({ theme }) => theme.primary.text};
   list-style-type: none;
 
+`;
+export const Bullet = styled(BulletIcon)`
+  color: ${({ theme }) => theme.primaryBlue.background};
+  margin-right: 16px;
+  height: auto;
 `;

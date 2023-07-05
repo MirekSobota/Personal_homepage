@@ -32,6 +32,7 @@ export const Name = styled.h1`
   font-weight: 900;
   font-size: 38px;
   margin: 12px 0 0 0;
+  color: ${({theme}) => theme.header.text}
 `;
 
 export const Content = styled.p`

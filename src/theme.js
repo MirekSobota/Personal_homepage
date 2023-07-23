@@ -14,7 +14,10 @@ export const lightTheme = {
         background: colorList.whiteLilac,
     },
     header: {
-        text: colorList.mineShaft
+        text: colorList.mineShaft,
+    },
+    white: {
+        text: colorList.white,
     },
     section:{
         background: colorList.white,

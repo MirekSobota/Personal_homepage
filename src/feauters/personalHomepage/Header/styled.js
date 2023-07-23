@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as Email } from "./images/email.svg";
 
 export const Wrapper = styled.header`
   max-width: 1089px;
@@ -32,18 +33,20 @@ export const Name = styled.h1`
   font-weight: 900;
   font-size: 38px;
   margin: 12px 0 0 0;
-  color: ${({theme}) => theme.header.text}
+  color: ${({ theme }) => theme.header.text};
 `;
 
 export const Content = styled.p`
-  max-width: 650px;  
+  max-width: 650px;
   font-weight: 400;
   line-height: 1.4;
   margin: 35px 0 32px 0;
 `;
 
-
 export const HireMe = styled.a`
+  background-color: ${({ theme }) => theme.primaryBlue.background};
+  color: ${({ theme }) => theme.white.text};
+  padding: 12px 16px 12px 40px;
   text-align: center;
   font-size: 20px;
   font-weight: 600;
@@ -52,10 +55,19 @@ export const HireMe = styled.a`
 `;
 
 export const HireMeButton = styled.button`
+  background-color: ${({ theme }) => theme.primaryBlue.background};
+
   display: inline-flex;
-  padding: 12px 16px;
+  
   justify-content: center;
   align-items: center;
-  gap: 16px;
+ 
   border-radius: 4px;
+  position: relative;
+  border: 1px solid var(--diff-bg-neutral, rgba(209, 213, 218, 0.30));
+`;
+
+export const EmailIcon = styled(Email)`
+  position: absolute;
+  transform: translate(-190%, -0%);
 `;

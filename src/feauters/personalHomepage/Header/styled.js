@@ -69,5 +69,5 @@ export const HireMeButton = styled.button`
 
 export const EmailIcon = styled(Email)`
   position: absolute;
-  transform: translate(-190%, -0%);
+  transform: translate(-150%, -5%);
 `;

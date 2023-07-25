@@ -13,7 +13,7 @@ export const Header = () => {
                     <ThisIs>This is</ThisIs>
                     <Name>Mirek Sobota</Name>
                     <Content>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </Content>
-                    <HireMeButton onClick={console.log("TEST")}>
+                    <HireMeButton >
                         <HireMe href={`mailto:${email}`} title={email} rel="noopener noreferrer">
                             <EmailIcon />
                             HireMe

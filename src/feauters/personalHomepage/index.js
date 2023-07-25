@@ -4,6 +4,7 @@ import { SectionSkills } from "./SectionSkills";
 import { skills, toLearn } from "./SectionSkills/skills";
 import { ThemeSwitcher } from "../../common/ThemeSwitcher";
 import { Portfolio } from "./Portfolio";
+import { Footer } from "./Footer";
 
 
 export const PersonalHomepage = () => {
@@ -15,6 +16,7 @@ export const PersonalHomepage = () => {
                 <SectionSkills title="My skill set includes" content={skills} />
                 <SectionSkills title="What I want to learn next" content={toLearn} />
                 <Portfolio />
+                <Footer />
             </Container>
         </>
     )

@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { lightTheme } from "./theme";
 
 const personalPageSlice = createSlice({
   name: "personalPage",

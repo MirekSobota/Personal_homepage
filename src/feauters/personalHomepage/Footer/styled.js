@@ -5,6 +5,7 @@ import{ ReactComponent as LinkedIn } from "./images/linkedIn.svg";
 
 export const Container = styled.div`
 max-width: 700px;
+margin-top: 120px;
 `;
 
 export const SubHeader = styled.p`

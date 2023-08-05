@@ -1,6 +1,6 @@
 
 import { Container, SubHeader, EmailButton, FooterText, GitHubIcon, LinkedInIkon, Wrapper } from "./styled";
-import { email } from "../../email";
+import { email, github } from "../../email";
 
 
 export const Footer = () => {

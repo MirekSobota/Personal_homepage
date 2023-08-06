@@ -1,6 +1,6 @@
 import { Wrapper, About, Image, ThisIs, Name, Content, HireMeButton, HireMe, EmailIcon } from "./styled";
 import myFoto from "./images/MirekSobotaTemp.png";
-import { email } from "../../email";
+import { email } from "../../personalData";
 
 
 export const Header = () => {

@@ -1,6 +1,8 @@
 
-import { Container, SubHeader, EmailButton, FooterText, GitHubIcon, LinkedInIkon, Wrapper } from "./styled";
-import { email, github } from "../../email";
+import { Container, SubHeader, EmailButton, FooterText, GitHubIcon, LinkedInIkon, Wrapper, Link } from "./styled";
+import { email, github, linkedin } from "../../personalData";
+
+
 
 
 export const Footer = () => {
@@ -12,8 +14,12 @@ export const Footer = () => {
                 <EmailButton href={`mailto:${email}`} title={email} rel="noopener noreferrer">miroslaw.sobota@gmail.com</EmailButton>
                 <FooterText>I’m always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas come to life, feel free to conatct me</FooterText>
                 <Wrapper>
+                    <Link href={github}>
                     <GitHubIcon />
-                    <LinkedInIkon />
+                    </Link>
+                   <Link href={linkedin}>
+                   <LinkedInIkon />
+                   </Link>
                 </Wrapper>
             </Container>
         </>

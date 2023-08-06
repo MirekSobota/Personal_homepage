@@ -47,11 +47,10 @@ margin-top: 56px;
 `;
 
 export const GitHubIcon = styled(GitHub)`
-
 transition: 0.2s ease;
 
 &:hover{
-    color: ${({ theme }) => theme.primaryBlue.text};  
+    fill: ${({ theme }) => theme.primaryBlue.background};  
 }
 `;
 
@@ -59,6 +58,9 @@ export const LinkedInIkon = styled(LinkedIn)`
 transition: 0.2s ease;
 
 &:hover{
-    color: ${({ theme }) => theme.primaryBlue.text};  
+    fill: ${({ theme }) => theme.primaryBlue.background}; 
 }
-`; 
+`;
+export const Link = styled.a`
+cursor: pointer;
+`;

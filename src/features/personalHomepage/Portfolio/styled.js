@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-import { ReactComponent as GitHubIcon } from "./github.svg";
+import { ReactComponent as GitHubIcon } from "../../../common/assets/github.svg";
 
 export const Container = styled.section`
 display: grid;
@@ -8,6 +8,7 @@ justify-items: center;
 `;
 
 export const GitHub = styled(GitHubIcon)`
+ fill: ${({ theme }) => theme.primaryBlue.background};  
 `;
 
 export const Header = styled.h2`

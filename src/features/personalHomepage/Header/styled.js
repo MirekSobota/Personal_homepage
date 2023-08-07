@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as Email } from "./images/email.svg";
+import { ReactComponent as Email } from "../../../common/assets/email.svg";
 
 export const Wrapper = styled.header`
   max-width: 1089px;

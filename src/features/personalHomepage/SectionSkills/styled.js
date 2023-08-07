@@ -1,4 +1,4 @@
-import { ReactComponent as BulletIcon } from "./bullet.svg";
+import { ReactComponent as BulletIcon } from "../../../common/assets/bulletLightTheme.svg";
 
 import styled from "styled-components";
 

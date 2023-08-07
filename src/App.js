@@ -1,5 +1,5 @@
-import { PersonalHomepage } from "./feauters/personalHomepage";
-import { GlobalStyle } from "./feauters/GlobalStyled";
+import { PersonalHomepage } from "./features/personalHomepage";
+import { GlobalStyle } from "./features/GlobalStyled";
 import { ThemeProvider } from "styled-components";
 import { lightTheme } from "./theme";
 

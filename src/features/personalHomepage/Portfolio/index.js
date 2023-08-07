@@ -2,13 +2,13 @@ import { useEffect } from "react";
 import { Container, GitHub, Header, SubTitle, StyledList, StyledListItem, SubHeader, StyledLink, Paragraph, Description } from "./styled";
 import { useDispatch, useSelector } from "react-redux";
 
-import { fetchHomePageLoad, selectReposState } from "../homePageSlice";
+import { fetchDataFromGitHubLoad, selectRepositoryState } from "./portfolioSlice";
 
 export const Portfolio = () => {
   const dispatch = useDispatch();
-  const repositories = useSelector(selectReposState);
+  const repositories = useSelector(selectRepositoryState);
   useEffect(() => {
-    dispatch(fetchHomePageLoad());
+    dispatch(fetchDataFromGitHubLoad());
   }, [dispatch]);
 
   return (

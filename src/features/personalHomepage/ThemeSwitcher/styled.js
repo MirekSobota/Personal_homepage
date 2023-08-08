@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { ReactComponent as SunIcon } from "./assets/sunIcon.svg";
-import { ReactComponent as BackgroundIcon } from "./assets/background.svg";
-import { ReactComponent as ToggleIcon } from "./assets/toggle.svg";
+import { ReactComponent as SunIcon } from "../../../common/assets/sunIcon.svg";
+import { ReactComponent as BackgroundIcon } from "../../../common/assets/background.svg";
+import { ReactComponent as ToggleIcon } from "../../../common/assets/toggle.svg";
 
 export const Container = styled.div`
   margin: 60px auto 0;

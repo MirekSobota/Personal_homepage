@@ -9,21 +9,22 @@ import {
   Background,
   Toggle,
 } from "./styled";
-import { selectTheme, toggleTheme } from "../../../personalPageSlice";
+import { selectTheme, toggleTheme } from "./themeSwitchSlice";
 
 export const ThemeSwitcher = () => {
   const dispatch = useDispatch();
-  
- 
+  const themeSwitch = useSelector(selectTheme);
 
   return (
     <Container>
       <Wrapper>
-        <Title>Dark mode off</Title>
-        <Button onClick={()=> dispatch(toggleTheme())}>
+        <Title>Dark mode {themeSwitch ? "off" : "on"}</Title>
+        <Button onClick={() => {
+          dispatch(toggleTheme());
+        }}>
           <Background />
-          <Toggle />
-          <Sun />
+          <Toggle $newProp={themeSwitch} />
+          <Sun $newProp={themeSwitch} />
         </Button>
       </Wrapper>
     </Container>

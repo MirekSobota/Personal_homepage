@@ -35,7 +35,11 @@ export const lightTheme = {
     svg: {
         fill: colorList.mineShaft,
         hover: colorList.scienceBlue,
-
+    },
+    svgTheme:{
+        fillBackGround: colorList.mercury,
+        fillToggle: colorList.slateGray,
+        fillSun: colorList.white,
     },
 
 };  
@@ -64,5 +68,10 @@ export const darkTheme = {
     svg: {
         fill: colorList.white,
         hover: colorList.DodgerBlue,
+    },
+    svgTheme:{
+        fillBackGround: colorList.slateGray,
+        fillToggle: colorList.white,
+        fillSun: colorList.mineShaft,
     },
 };

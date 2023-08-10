@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { lightTheme } from "../../../theme";
+import { lightTheme } from "../../../core/theme";
 
 const themeSwitchSlice = createSlice({
   name: "themeSwitch",

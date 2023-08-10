@@ -56,12 +56,9 @@ export const HireMe = styled.a`
 
 export const HireMeButton = styled.button`
   background-color: ${({ theme }) => theme.primaryBlue.background};
-
   display: inline-flex;
-  
   justify-content: center;
   align-items: center;
- 
   border-radius: 4px;
   position: relative;
   border: 1px solid var(--diff-bg-neutral, rgba(209, 213, 218, 0.30));

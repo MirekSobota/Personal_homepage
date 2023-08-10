@@ -1,6 +1,6 @@
 
 import { Container, SubHeader, EmailButton, FooterText, GitHubIcon, LinkedInIkon, Wrapper, Link } from "./styled";
-import { email, github, linkedin } from "../../personalData";
+import { email, github, linkedin } from "../../../common/personalData";
 
 
 

@@ -2,7 +2,7 @@ const colorList = {
     white: "#FFFFFF",
     whiteLilac: "#FBFBFE",
     scienceBlue: "#0366D6",
-    DodgerBlue:"#2188FF",
+    dodgerBlue:"#2188FF",
     slateGray: "#6E7E91",
     mercury: "#E5E5E5",
     iron: "#D1D5DA",
@@ -62,12 +62,12 @@ export const darkTheme = {
         background: colorList.mercury,
     },
     primaryBlue: {
-        text: colorList.scienceBlue,
-        background: colorList.scienceBlue,
+        text: colorList.dodgerBlue,
+        background: colorList.dodgerBlue,
     },
     svg: {
         fill: colorList.white,
-        hover: colorList.DodgerBlue,
+        hover: colorList.dodgerBlue,
     },
     svgTheme:{
         fillBackGround: colorList.slateGray,

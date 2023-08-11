@@ -40,7 +40,7 @@ export const Item = styled.li`
 
 `;
 export const Bullet = styled(BulletIcon)`
-  color: ${({ theme }) => theme.primaryBlue.background};
+  fill: ${({ theme }) => theme.primaryBlue.background};
   margin-right: 16px;
   height: auto;
 `;

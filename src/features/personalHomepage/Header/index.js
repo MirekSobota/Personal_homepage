@@ -1,5 +1,5 @@
 import { Wrapper, About, Image, ThisIs, Name, Content, HireMeButton, HireMe, EmailIcon } from "./styled";
-import myFoto from "./images/MirekSobotaTemp.png";
+import picture from "./images/mireksobota.jpg";
 import { email } from "../../../common/personalData";
 
 
@@ -8,7 +8,7 @@ export const Header = () => {
     return (
         <>
             <Wrapper>
-                <Image src={myFoto} alt="Mirek SObota"></Image>
+            <Image src={picture} alt="Mirek Sobota" />
                 <About>
                     <ThisIs>This is</ThisIs>
                     <Name>Mirek Sobota</Name>

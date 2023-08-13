@@ -10,6 +10,9 @@ const portfolioSlice = createSlice({
     fetchDataFromGitHubLoad: (state) => {
       state.status = "loading";
     },
+    fetchDataFromGitHubLoading: (state) => {
+      state.status = "loading";
+    },
     fetchDataFromGitHubSuccess: (state, {payload: repository}) => {
       state.repository = repository.data;
       state.status = "success";
@@ -20,6 +23,7 @@ const portfolioSlice = createSlice({
   },
 });
 export const {
+  fetchDataFromGitHubLoading,
   fetchDataFromGitHubLoad,
   fetchDataFromGitHubSuccess,
   fetchDatFromGitHubError,
@@ -27,5 +31,6 @@ export const {
 
 export const selectPortfolioListState = (state) => state.portfolio;
 export const selectRepositoryState = (state) => selectPortfolioListState(state).repository;
+export const selectStatus = (state) => selectPortfolioListState(state).status;
 
 export default portfolioSlice.reducer;

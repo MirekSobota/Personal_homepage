@@ -7,6 +7,13 @@ export const Container = styled.section`
   justify-items: center;
 `;
 
+export const Wrapper = styled.div`
+  max-width: 420px;
+  margin: auto;
+  display: grid;
+  justify-items: center;
+`;
+
 export const GitHub = styled(GitHubIcon)`
   fill: ${({ theme }) => theme.primaryBlue.background};  
 `;
@@ -28,15 +35,15 @@ export const SubTitle = styled.p`
   font-weight: 400;
   line-height: 1.4; 
   letter-spacing: 1px;
-  margin: 8px 0 24px 0;
-`; 
+  margin: 8px 0 88px 0;
+`;
 
 export const StyledList = styled.li`
   display: grid;
   grid-template-columns: 1fr 1fr;
   list-style: none;
   grid-gap:32px;
-`; 
+`;
 
 export const StyledListItem = styled.ul`
   padding: 56px;
@@ -47,22 +54,22 @@ export const StyledListItem = styled.ul`
   margin: 0;
   display: flex;
   flex-direction: column;
-`; 
+`;
 
 export const SubHeader = styled.h2`
   color: ${({ theme }) => theme.primaryBlue.text};
   margin: 0;
-`; 
+`;
 
 export const StyledLink = styled.a`
   color: ${({ theme }) => theme.primaryBlue.text};
   margin: 0;
-`; 
+`;
 
 export const Paragraph = styled.span`
   margin: 8px 0 0 0;
 `;
 
-export const  Description = styled.p`
+export const Description = styled.p`
   margin:24px 0 16px 0;
 `;

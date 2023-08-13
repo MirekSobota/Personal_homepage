@@ -46,7 +46,7 @@ export const Content = styled.p`
 export const HireMe = styled.a`
   background-color: ${({ theme }) => theme.primaryBlue.background};
   color: ${({ theme }) => theme.white.text};
-  padding: 12px 16px 12px 40px;
+  padding: 12px 16px 12px 40px  ;
   text-align: center;
   font-size: 20px;
   font-weight: 600;

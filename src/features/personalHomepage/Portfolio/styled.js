@@ -12,6 +12,7 @@ export const GitHub = styled(GitHubIcon)`
 `;
 
 export const Header = styled.h2`
+  color: ${({ theme }) => theme.header.text};
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -21,6 +22,7 @@ export const Header = styled.h2`
 `;
 
 export const SubTitle = styled.p`
+  color: ${({ theme }) => theme.header.text};
   font-size: 20px;
   font-style: normal;
   font-weight: 400;

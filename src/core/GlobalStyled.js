@@ -13,7 +13,8 @@ body{
   margin:115px auto;
   font-family:"Inter",sans-serif;
   color:${({ theme }) => theme.primary.text};
-  background-color: ${({ theme }) => theme.primary.background};
+  background: ${({ theme }) => theme.primary.background};
+  transition: background 1s linear, color 1s linear;
 }
 `;
 

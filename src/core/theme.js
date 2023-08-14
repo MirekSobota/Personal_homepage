@@ -7,7 +7,10 @@ const colorList = {
     mercury: "#E5E5E5",
     iron: "#D1D5DA",
     mineShaft: "#252525",
-    grey:"#363636"
+    grey:"#363636", 
+    shadowDark:"#090a3308", 
+    shadowDarker: "#090a3305",
+    borderBlue: "#0366d633",
 };
 
 
@@ -41,6 +44,13 @@ export const lightTheme = {
         fillToggle: colorList.slateGray,
         fillSun: colorList.white,
     },
+    shadow:{
+        colorOne: colorList.shadowDark,
+        colorTwo: colorList.shadowDarker,
+    },
+    border:{
+        borderLM:colorList.borderBlue,
+    }
 
 };  
 
@@ -74,4 +84,11 @@ export const darkTheme = {
         fillToggle: colorList.white,
         fillSun: colorList.mineShaft,
     },
+    shadow:{
+        colorOne: colorList.shadowDark,
+        colorTwo: colorList.shadowDarker,
+    },
+    border:{
+        borderLM:colorList.dodgerBlue,
+    }
 };

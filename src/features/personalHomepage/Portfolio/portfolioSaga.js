@@ -7,7 +7,7 @@ function* getDataFromGitHubHandler() {
     yield put(fetchDataFromGitHubLoading());
     const data = yield call(getGitHubData);
     
-    yield delay(1000);
+    yield delay(1500);
     yield put(fetchDataFromGitHubSuccess({ data }));
   } catch (error) {
     yield put(fetchDatFromGitHubError());

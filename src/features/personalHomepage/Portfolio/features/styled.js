@@ -38,6 +38,7 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 1.2px;
 margin:0;
+margin-top:16px;
 `;
 
 export const LeadParagraph = styled.p`
@@ -47,7 +48,8 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.4; 
 letter-spacing: 1px;
-margin:0;
+margin-bottom: 32px;
+margin-top:32px;
 `;
 
 

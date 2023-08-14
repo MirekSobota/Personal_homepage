@@ -10,6 +10,7 @@ export const Container = styled.section`
 export const Wrapper = styled.div`
   max-width: 420px;
   margin: auto;
+  margin-bottom: 20px;
   display: grid;
   justify-items: center;
 `;
@@ -49,12 +50,18 @@ export const StyledListItem = styled.ul`
   padding: 56px;
   border-radius: 4px;
   border: 6px solid var(--diff-bg-neutral, rgba(209, 213, 218, 0.30));
-  box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03), 0px -2px 50px 0px rgba(9, 10, 51, 0.02);
+  box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.shadow.colorOne}, 0px -2px 50px 0px ${({ theme }) => theme.shadow.colorTwo};
   background: ${({ theme }) => theme.section.background};
   margin: 0;
   display: flex;
   flex-direction: column;
+
+&:hover{
+  border: 6px solid ${({ theme }) => theme.border.borderLM};  
+}
 `;
+
+
 
 export const SubHeader = styled.h2`
   color: ${({ theme }) => theme.primaryBlue.text};

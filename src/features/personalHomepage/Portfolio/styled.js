@@ -1,6 +1,17 @@
-import { styled } from "styled-components";
+import styled, {keyframes}  from "styled-components";
 
 import { ReactComponent as GitHubIcon } from "../../../common/assets/github.svg";
+
+const fadeIn = keyframes`
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`;
 
 export const Container = styled.section`
   display: grid;
@@ -55,6 +66,9 @@ export const StyledListItem = styled.ul`
   margin: 0;
   display: flex;
   flex-direction: column;
+  opacity: 0; 
+  animation: ${fadeIn} 0.5s forwards;
+  animation-delay: ${({ delay }) => delay}s; 
 
 &:hover{
   border: 6px solid ${({ theme }) => theme.border.borderLM};  

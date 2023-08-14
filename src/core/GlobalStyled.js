@@ -14,7 +14,7 @@ body{
   font-family:"Inter",sans-serif;
   color:${({ theme }) => theme.primary.text};
   background: ${({ theme }) => theme.primary.background};
-  transition: background 1s linear, color 1s linear;
+  transition: background 1s, color 0.6s linear;
 }
 `;
 

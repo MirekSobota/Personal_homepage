@@ -38,8 +38,8 @@ export const Portfolio = () => {
           <Header>Portfolio</Header>
           <SubTitle>My recent projects</SubTitle>
           <StyledList>
-            {repositories.map((repo) => (
-              <StyledListItem key={repo.id}>
+            {repositories.map((repo, index) => (
+              <StyledListItem key={repo.id} delay={Math.floor(index/2)*0.5}>
                 <SubHeader>{repo.name}</SubHeader>
                 <Description>{repo.description}</Description>
                 <Paragraph>

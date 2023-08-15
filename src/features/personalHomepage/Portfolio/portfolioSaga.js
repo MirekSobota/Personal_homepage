@@ -1,6 +1,8 @@
 import { getGitHubData } from "./getDataAPI";
-import { call, delay, put, takeLatest } from "redux-saga/effects"
+import { call, delay, put, takeEvery, takeLatest, select } from "redux-saga/effects"
 import { fetchDataFromGitHubLoad, fetchDataFromGitHubLoading, fetchDataFromGitHubSuccess, fetchDatFromGitHubError} from "./portfolioSlice";
+import { selectTheme } from "../ThemeSwitcher/themeSwitchSlice";
+import { saveThemeInLocalStorage } from "../ThemeSwitcher/themeLocalStorage";
 
 function* getDataFromGitHubHandler() {
   try {
@@ -13,8 +15,13 @@ function* getDataFromGitHubHandler() {
     yield put(fetchDatFromGitHubError());
   }
 }
+function* saveThemeInLocalStorageHandler() {
+  const theme = yield select(selectTheme);
+  yield call(saveThemeInLocalStorage, theme);
+}
 
 
 export function* watchFetchRepository() {
   yield takeLatest(fetchDataFromGitHubLoad.type, getDataFromGitHubHandler);
+  yield takeEvery("*", saveThemeInLocalStorageHandler);
 }

@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { lightTheme } from "../../../core/theme";
+import { getThemeFromLocalStorage } from "./themeLocalStorage";
 
 const themeSwitchSlice = createSlice({
   name: "themeSwitch",
   initialState: {
-    theme: lightTheme,
+    theme: getThemeFromLocalStorage(),
   },
   reducers: {
     toggleTheme: (state)=> {

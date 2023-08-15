@@ -11,6 +11,9 @@ const colorList = {
     shadowDark:"#090a3308", 
     shadowDarker: "#090a3305",
     borderBlue: "#0366d633",
+    borderLightBlue: "#0366d680",
+    
+
 };
 
 
@@ -49,7 +52,7 @@ export const lightTheme = {
         colorTwo: colorList.shadowDarker,
     },
     border:{
-        borderLM:colorList.borderBlue,
+        borderLM:colorList.borderLightBlue,
     }
 
 };  
@@ -89,6 +92,6 @@ export const darkTheme = {
         colorTwo: colorList.shadowDarker,
     },
     border:{
-        borderLM:colorList.dodgerBlue,
+        borderLM:colorList.borderBlue,
     }
 };

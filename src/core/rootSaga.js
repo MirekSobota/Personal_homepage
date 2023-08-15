@@ -1,9 +1,9 @@
 import { all } from "redux-saga/effects";
-import {watchFetchRepository} from "../features/personalHomepage/Portfolio/portfolioSaga";
+import {watchFetchPersonalHomePage} from "./personelHomePageSaga";
 
 export default function* rootSaga() {
   yield all([
-    watchFetchRepository(),
+    watchFetchPersonalHomePage(),
   ]);
 }
 

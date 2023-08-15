@@ -12,6 +12,7 @@ html {
 
 body{
   font-family:"Inter",sans-serif;
+  margin: auto;
 }
 
 `;

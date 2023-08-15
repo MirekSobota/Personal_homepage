@@ -60,7 +60,7 @@ export const StyledList = styled.li`
 export const StyledListItem = styled.ul`
   padding: 56px;
   border-radius: 4px;
-  border: 6px solid var(--diff-bg-neutral, rgba(209, 213, 218, 0.30));
+  border: 6px solid ${({ theme }) => theme.border.border};
   box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.shadow.colorOne}, 0px -2px 50px 0px ${({ theme }) => theme.shadow.colorTwo};
   background: ${({ theme }) => theme.section.background};
   margin: 0;
@@ -71,7 +71,7 @@ export const StyledListItem = styled.ul`
   animation-delay: ${({ delay }) => delay}s; 
 
 &:hover{
-  border: 6px solid ${({ theme }) => theme.border.borderLM};  
+  border: 6px solid ${({ theme }) => theme.border.borderHover};  
 }
 `;
 

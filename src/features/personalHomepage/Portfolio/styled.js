@@ -55,6 +55,10 @@ export const StyledList = styled.li`
   grid-template-columns: 1fr 1fr;
   list-style: none;
   grid-gap:32px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    grid-template-columns: auto ;
+  }
 `;
 
 export const StyledListItem = styled.ul`
@@ -73,6 +77,12 @@ export const StyledListItem = styled.ul`
 &:hover{
   border: 6px solid ${({ theme }) => theme.border.borderHover};  
 }
+
+@media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+  padding: 24px;
+  max-width: 350px;
+  word-break: break-all;
+  }
 `;
 
 

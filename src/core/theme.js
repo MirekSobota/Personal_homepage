@@ -1,3 +1,9 @@
+const breakpoint = {
+  mobileMax: "767px",
+  iPad: "1023px",
+  desktopHD: "1366px",
+};
+
 const colorList = {
   white: "#FFFFFF",
   whiteLilac: "#FBFBFE",
@@ -8,8 +14,8 @@ const colorList = {
   iron: "#d2d6db4d",
   mineShaft: "#252525",
   grey: "#363636",
-  shadowDark: "#090a3308",
-  shadowDarker: "#090a3305",
+  shadowLight: "#090a3308",
+  shadowDark: "#090a3305",
   tropicalBlue: "#CDE0F7",
   azure: "#35669E",
   tundora: "#414141",
@@ -46,13 +52,14 @@ export const lightTheme = {
     fillSun: colorList.white,
   },
   shadow: {
-    colorOne: colorList.shadowDark,
-    colorTwo: colorList.shadowDarker,
+    colorOne: colorList.shadowLight,
+    colorTwo: colorList.shadowDark,
   },
   border: {
     border: colorList.iron,
     borderHover: colorList.tropicalBlue,
   },
+  breakpoint
 };
 
 export const darkTheme = {
@@ -86,11 +93,12 @@ export const darkTheme = {
     fillSun: colorList.mineShaft,
   },
   shadow: {
-    colorOne: colorList.shadowDark,
-    colorTwo: colorList.shadowDarker,
+    colorOne: colorList.shadowLight,
+    colorTwo: colorList.shadowDark,
   },
   border: {
     border: colorList.tundora,
     borderHover: colorList.azure,
   },
+  breakpoint
 };

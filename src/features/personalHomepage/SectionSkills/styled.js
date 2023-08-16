@@ -3,10 +3,15 @@ import styled from "styled-components";
 import { ReactComponent as BulletIcon } from "../../../common/assets/bulletLightTheme.svg";
 
 export const Wrapper = styled.section`
-  max-width: 2016px;
+  max-width: 1216px;
   border-radius: 4px;
   box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03), 0px -2px 50px 0px rgba(9, 10, 51, 0.02);
   background: ${({ theme }) => theme.section.background};
+  
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    max-width: 1216px;
+  }
+
 `;
 
 export const SectionHeader = styled.h2`
@@ -31,6 +36,10 @@ export const List = styled.ul`
   grid-template-rows: repeat(8 1fr);
   padding: 30px 32px;
   margin-bottom: 72px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    grid-template-columns: auto ;
+  }
 `;
 
 export const Item = styled.li`

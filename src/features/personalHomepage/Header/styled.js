@@ -10,18 +10,28 @@ export const Wrapper = styled.header`
   align-items: center;
   font-size: 20px;
   margin-bottom: 63px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    max-width: 450px;
+    grid-template-columns:  1fr;
+  }
 `;
 
+export const Image = styled.img`
+  max-width: 398px;
+  max-height: 398px;
+  border-radius: 50%;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    max-width: 250px;
+    max-height: 250px;
+  }
+`;
 export const About = styled.div`
   max-width: 633px;
   padding-top: 14px;
 `;
 
-export const Image = styled.img`
-  width: 398px;
-  height: 398px;
-  border-radius: 50%;
-`;
 
 export const ThisIs = styled.p`
   font-weight: 700;
@@ -46,7 +56,7 @@ export const Content = styled.p`
 export const HireMe = styled.a`
   background-color: ${({ theme }) => theme.primaryBlue.background};
   color: ${({ theme }) => theme.white.text};
-  padding: 12px 16px 12px 40px  ;
+  padding: 12px 16px 12px 40px;
   text-align: center;
   font-size: 20px;
   font-weight: 600;
@@ -61,7 +71,7 @@ export const HireMeButton = styled.button`
   align-items: center;
   border-radius: 4px;
   position: relative;
-  border: 1px solid var(--diff-bg-neutral, rgba(209, 213, 218, 0.30));
+  border: 1px solid var(--diff-bg-neutral, rgba(209, 213, 218, 0.3));
 `;
 
 export const EmailIcon = styled(Email)`

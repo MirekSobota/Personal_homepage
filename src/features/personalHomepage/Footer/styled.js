@@ -25,9 +25,17 @@ export const EmailButton = styled.a`
   margin-top: 24px;
   transition: 0.2s ease;
 
-&:hover{
-  color: ${({ theme }) => theme.primaryBlue.text};  
-}
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.9px;
+  }
+
+  &:hover {
+    color: ${({ theme }) => theme.primaryBlue.text};
+  }
 `;
 
 export const FooterText = styled.p`
@@ -38,6 +46,14 @@ export const FooterText = styled.p`
   line-height: 1.4;
   letter-spacing: 0.9px;
   margin-top: 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.7px;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -52,9 +68,9 @@ export const GitHubIcon = styled(GitHub)`
   height: 48px;
   fill: ${({ theme }) => theme.svg.fill};
 
-&:hover{
-  fill: ${({ theme }) => theme.svg.hover};  
-}
+  &:hover {
+    fill: ${({ theme }) => theme.svg.hover};
+  }
 `;
 
 export const LinkedInIkon = styled(LinkedIn)`
@@ -63,10 +79,10 @@ export const LinkedInIkon = styled(LinkedIn)`
   height: 48px;
   fill: ${({ theme }) => theme.svg.fill};
 
-&:hover{
-  fill: ${({ theme }) => theme.svg.hover}; 
-}
+  &:hover {
+    fill: ${({ theme }) => theme.svg.hover};
+  }
 `;
 export const Link = styled.a`
-cursor: pointer;
+  cursor: pointer;
 `;

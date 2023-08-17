@@ -1,4 +1,4 @@
-import styled, {keyframes}  from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 import { ReactComponent as GitHubIcon } from "../../../common/assets/github.svg";
 
@@ -27,7 +27,12 @@ export const Wrapper = styled.div`
 `;
 
 export const GitHub = styled(GitHubIcon)`
-  fill: ${({ theme }) => theme.primaryBlue.background};  
+  fill: ${({ theme }) => theme.primaryBlue.background};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    width: 32px;
+    height: 32px;
+  }
 `;
 
 export const Header = styled.h2`
@@ -38,6 +43,11 @@ export const Header = styled.h2`
   line-height: normal;
   letter-spacing: 1.5px;
   margin: 12px 0 0 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+  }
 `;
 
 export const SubTitle = styled.p`
@@ -45,19 +55,26 @@ export const SubTitle = styled.p`
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.4; 
+  line-height: 1.4;
   letter-spacing: 1px;
   margin: 8px 0 88px 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    font-size: 17px;
+    letter-spacing: 0.85px;
+    margin: 8px 0 24px 0;
+  }
 `;
 
 export const StyledList = styled.li`
   display: grid;
   grid-template-columns: 1fr 1fr;
   list-style: none;
-  grid-gap:32px;
+  grid-gap: 32px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
-    grid-template-columns: auto ;
+    grid-template-columns: auto;
+    grid-gap: 16px;
   }
 `;
 
@@ -65,31 +82,40 @@ export const StyledListItem = styled.ul`
   padding: 56px;
   border-radius: 4px;
   border: 6px solid ${({ theme }) => theme.border.border};
-  box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.shadow.colorOne}, 0px -2px 50px 0px ${({ theme }) => theme.shadow.colorTwo};
+  box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.shadow.colorOne},
+    0px -2px 50px 0px ${({ theme }) => theme.shadow.colorTwo};
   background: ${({ theme }) => theme.section.background};
   margin: 0;
   display: flex;
   flex-direction: column;
-  opacity: 0; 
+  opacity: 0;
   animation: ${fadeIn} 0.5s forwards;
-  animation-delay: ${({ delay }) => delay}s; 
+  animation-delay: ${({ delay }) => delay}s;
 
-&:hover{
-  border: 6px solid ${({ theme }) => theme.border.borderHover};  
-}
+  &:hover {
+    border: 6px solid ${({ theme }) => theme.border.borderHover};
+  }
 
-@media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
-  padding: 24px;
-  max-width: 350px;
-  word-break: break-all;
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    padding: 24px;
+    max-width: auto;
+    word-break: break-all;
   }
 `;
-
-
 
 export const SubHeader = styled.h2`
   color: ${({ theme }) => theme.primaryBlue.text};
   margin: 0;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  }
 `;
 
 export const StyledLink = styled.a`
@@ -102,5 +128,16 @@ export const Paragraph = styled.span`
 `;
 
 export const Description = styled.p`
-  margin:24px 0 16px 0;
+  margin: 16px 0 16px 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.9px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.7px;
+  }
 `;

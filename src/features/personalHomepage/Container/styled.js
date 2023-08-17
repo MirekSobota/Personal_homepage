@@ -18,5 +18,6 @@ export const Wrapper = styled.div`
 
   @media(max-width: ${({theme}) => theme.breakpoint.mobileMax}) {
     min-width: 450px;
+    padding-bottom: 15px;
   }
 `;

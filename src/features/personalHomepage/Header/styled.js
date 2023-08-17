@@ -13,7 +13,8 @@ export const Wrapper = styled.header`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
     max-width: 450px;
-    grid-template-columns:  1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 12px;
   }
 `;
 
@@ -32,7 +33,6 @@ export const About = styled.div`
   padding-top: 14px;
 `;
 
-
 export const ThisIs = styled.p`
   font-weight: 700;
   text-transform: uppercase;
@@ -44,6 +44,14 @@ export const Name = styled.h1`
   font-size: 38px;
   margin: 12px 0 0 0;
   color: ${({ theme }) => theme.header.text};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.1px;
+  }
 `;
 
 export const Content = styled.p`
@@ -51,6 +59,14 @@ export const Content = styled.p`
   font-weight: 400;
   line-height: 1.4;
   margin: 35px 0 32px 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0.85px;
+  }
 `;
 
 export const HireMe = styled.a`
@@ -62,6 +78,13 @@ export const HireMe = styled.a`
   font-weight: 600;
   letter-spacing: 1px;
   text-decoration-line: none;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.9px;
+  }
 `;
 
 export const HireMeButton = styled.button`

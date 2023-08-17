@@ -5,13 +5,14 @@ import { ReactComponent as BulletIcon } from "../../../common/assets/bulletLight
 export const Wrapper = styled.section`
   max-width: 1216px;
   border-radius: 4px;
-  box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03), 0px -2px 50px 0px rgba(9, 10, 51, 0.02);
+  box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03),
+    0px -2px 50px 0px rgba(9, 10, 51, 0.02);
   background: ${({ theme }) => theme.section.background};
-  
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
-    max-width: 1216px;
-  }
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    padding: 16px;
+    margin: 0 14px 50px 14px;
+  }
 `;
 
 export const SectionHeader = styled.h2`
@@ -20,9 +21,17 @@ export const SectionHeader = styled.h2`
   padding: 32px 0 0 32px;
   font-size: 30px;
   font-weight: 900;
-`;
 
-export const Divider =  styled.div`
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    padding: 0 0 0 32px;
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.9px;
+  }
+`; 
+
+export const Divider = styled.div`
   max-width: 1151px;
   height: 1px;
   margin: auto;
@@ -38,7 +47,10 @@ export const List = styled.ul`
   margin-bottom: 72px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
-    grid-template-columns: auto ;
+    grid-template-columns: auto;
+    padding: 16px;
+    padding-top: 0;
+    margin-bottom: 0;
   }
 `;
 
@@ -46,7 +58,6 @@ export const Item = styled.li`
   display: flex;
   color: ${({ theme }) => theme.primary.text};
   list-style-type: none;
-
 `;
 export const Bullet = styled(BulletIcon)`
   fill: ${({ theme }) => theme.primaryBlue.background};

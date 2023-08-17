@@ -23,6 +23,10 @@ export const Title = styled.p`
   font-weight: 700;
   line-height: 1.3;
   text-transform: uppercase;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+    display: none;
+  }
 `;
 export const Button = styled.button`
   background-color: transparent;

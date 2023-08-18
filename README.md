@@ -1,3 +1,12 @@
+# Personal Home Page
+
+## Demo:
+[Personal Home Page Mirek Sobota](https://mireksobota.github.io/personal_homepage/)
+
+## Technologies:
+
+<p align="center"><a href="https://skillicons.dev/icons?i=html" target="_blank" rel="noreferrer"><img src="https://skillicons.dev/icons?i=html" alt="html5"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://skillicons.dev/icons?i=js" alt="JavaScript"/></a>  <a href="https://styled-components.com" target="_blank" rel="noreferrer"><img src="https://skillicons.dev/icons?i=styledcomponents" alt="styledcomponents"/></a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=react" alt="react"/>  </a> <a href="https://redux.js.org" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=redux" alt="redux"/> </a> <a href="https://webpack.js.org" target="_blank" rel="noreferrer"><img src="https://skillicons.dev/icons?i=webpack" alt="webpack"/> </a> <a href="https://www.figma.com" target="_blank" rel="noreferrer"><img src="https://skillicons.dev/icons?i=figma" alt="figma"/> </a> </p>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -39,32 +48,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

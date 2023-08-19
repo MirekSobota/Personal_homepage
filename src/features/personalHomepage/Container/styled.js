@@ -13,7 +13,7 @@ export const Container = styled.main`
 export const Wrapper = styled.div`
   color:${({ theme }) => theme.primary.text};
   background: ${({ theme }) => theme.primary.background};
-  transition: background 1s, color 0.6s linear; 
+  transition: background 0.8s, color 0.8s linear; 
   padding-bottom: 109px;
 
   @media(max-width: ${({theme}) => theme.breakpoint.mobileMax}) {

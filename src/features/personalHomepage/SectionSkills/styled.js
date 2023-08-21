@@ -9,7 +9,7 @@ export const Wrapper = styled.section`
     0px -2px 50px 0px rgba(9, 10, 51, 0.02);
   background: ${({ theme }) => theme.section.background};
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.iPad}) {
     padding: 16px;
     margin: 0 0 50px 0;
   }

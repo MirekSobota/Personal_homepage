@@ -21,7 +21,7 @@ export const Header = () => {
           <ThisIs>This is</ThisIs>
           <Name>Mirek Sobota</Name>
           <Content>
-            👨🏻‍💻 I’m a passionate Frontend Developer in love with React, currently
+            👨🏻‍💻 I am a Junior Frontend Developer seeking new challenges in programming. Currently, I'm working with React, but I'm interested in exploring new technologies to enhance my skills and become a better programmer.
             looking for new job opportunities.{" "}
           </Content>
           <HireMeButton>

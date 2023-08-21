@@ -12,8 +12,8 @@ export const PersonalHomepage = () => {
         <Container>
             <ThemeSwitcher />
             <Header />
-            <SectionSkills title="My skill set includes" content={skills} />
-            <SectionSkills title="What I want to learn next" content={toLearn} />
+            <SectionSkills title="My skill set includes 🛠️" content={skills} />
+            <SectionSkills title="What I want to learn next 🚀" content={toLearn} />
             <Portfolio />
             <Footer />
         </Container>

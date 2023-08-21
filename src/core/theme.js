@@ -1,7 +1,6 @@
 const breakpoint = {
   mobileMax: "767px",
   iPad: "1023px",
-  desktopHD: "1366px",
 };
 
 const colorList = {

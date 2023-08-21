@@ -72,7 +72,7 @@ export const StyledList = styled.li`
   list-style: none;
   grid-gap: 32px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.iPad}) {
     grid-template-columns: auto;
     grid-gap: 16px;
   }
@@ -94,6 +94,7 @@ export const StyledListItem = styled.ul`
 
   &:hover {
     border: 6px solid ${({ theme }) => theme.border.borderHover};
+    transition: 0.3s ease;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {

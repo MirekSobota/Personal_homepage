@@ -6,6 +6,11 @@ import { ReactComponent as LinkedIn } from "../../../common/assets/linkedIn.svg"
 export const Container = styled.div`
   max-width: 700px;
   margin-top: 48px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.iPad}) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 `;
 
 export const SubHeader = styled.p`
@@ -15,7 +20,6 @@ export const SubHeader = styled.p`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
     font-style: normal;
-    font-weight: 700;
     line-height: 1.3;
   }
 `;
@@ -29,7 +33,6 @@ export const EmailButton = styled.a`
   letter-spacing: 1.6px;
   text-decoration-line: none;
   margin-top: 24px;
-  transition: 0.2s ease;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
     font-size: 18px;
@@ -37,6 +40,7 @@ export const EmailButton = styled.a`
   }
 
   &:hover {
+    transition: 0.3s ease;
     color: ${({ theme }) => theme.primaryBlue.text};
   }
 `;
@@ -68,7 +72,6 @@ export const Wrapper = styled.div`
 `;
 
 export const GitHubIcon = styled(GitHub)`
-  transition: 0.2s ease;
   width: 48px;
   height: 48px;
   fill: ${({ theme }) => theme.svg.fill};
@@ -79,12 +82,12 @@ export const GitHubIcon = styled(GitHub)`
   }
 
   &:hover {
+    transition: 0.3s ease;
     fill: ${({ theme }) => theme.svg.hover};
   }
 `;
 
 export const LinkedInIkon = styled(LinkedIn)`
-  transition: 0.2s ease;
   width: 48px;
   height: 48px;
   fill: ${({ theme }) => theme.svg.fill};
@@ -95,6 +98,7 @@ export const LinkedInIkon = styled(LinkedIn)`
   }
 
   &:hover {
+    transition: 0.3s ease;
     fill: ${({ theme }) => theme.svg.hover};
   }
 `;

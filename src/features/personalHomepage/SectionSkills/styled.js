@@ -11,7 +11,7 @@ export const Wrapper = styled.section`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
     padding: 16px;
-    margin: 0 14px 50px 14px;
+    margin: 0 0 50px 0;
   }
 `;
 
@@ -45,6 +45,13 @@ export const List = styled.ul`
   grid-template-rows: repeat(8 1fr);
   padding: 30px 32px;
   margin-bottom: 72px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.iPad}) {
+    grid-template-columns: 1fr 1fr;
+    padding: 16px;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
     grid-template-columns: auto;

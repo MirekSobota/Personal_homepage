@@ -31,7 +31,7 @@
 
 ## 👉Preview:
 <a id="preview"></a>
-
+![Task_list_part_tasks](https://github.com/MirekSobota/personal-homepage/blob/master/preview.gif)
 
 <br/>
 

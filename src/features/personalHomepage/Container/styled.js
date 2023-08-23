@@ -6,18 +6,18 @@ export const Container = styled.main`
   padding: 16px;
   padding-bottom: 0;
 
-  @media(max-width: ${({theme}) => theme.breakpoint.mobileMax}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
     min-width: 450px;
   }
 `;
 
 export const Wrapper = styled.div`
-  color:${({ theme }) => theme.primary.text};
+  color: ${({ theme }) => theme.primary.text};
   background: ${({ theme }) => theme.primary.background};
-  transition: background 0.8s, color 0.8s linear; 
+  transition: background 0.8s, color 0.8s linear;
   padding-bottom: 109px;
 
-  @media(max-width: ${({theme}) => theme.breakpoint.iPad}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.iPad}) {
     min-width: 450px;
     padding-bottom: 15px;
   }

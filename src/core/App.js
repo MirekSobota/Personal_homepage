@@ -13,9 +13,9 @@ function App() {
   return (
     <ThemeProvider theme={theme ? lightTheme : darkTheme}>
       <GlobalStyle />
-        <Wrapper>
-          <PersonalHomepage />
-        </Wrapper>
+      <Wrapper>
+        <PersonalHomepage />
+      </Wrapper>
     </ThemeProvider>
   );
 }

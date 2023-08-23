@@ -58,7 +58,7 @@ export const lightTheme = {
     border: colorList.iron,
     borderHover: colorList.tropicalBlue,
   },
-  breakpoint
+  breakpoint,
 };
 
 export const darkTheme = {
@@ -99,5 +99,5 @@ export const darkTheme = {
     border: colorList.tundora,
     borderHover: colorList.azure,
   },
-  breakpoint
+  breakpoint,
 };

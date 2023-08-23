@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components';
-import {ReactComponent as DangerIcon} from "../../../../common/assets/dangerIcon.svg";
+import styled, { keyframes } from "styled-components";
+import { ReactComponent as DangerIcon } from "../../../../common/assets/dangerIcon.svg";
 
 const spinAnimation = keyframes`
   0% { transform: rotate(0deg); }
@@ -7,22 +7,22 @@ const spinAnimation = keyframes`
 `;
 
 export const Loader = styled.div`
-  border: 11.375px solid #D1D5DA;
-  border-radius: 50%;  
-  border-top: 11.375px solid #0366D6;  
-  width: 160px;  
-  height: 160px;  
-  animation: ${spinAnimation} 1s linear infinite;  
+  border: 11.375px solid #d1d5da;
+  border-radius: 50%;
+  border-top: 11.375px solid #0366d6;
+  width: 160px;
+  height: 160px;
+  animation: ${spinAnimation} 1s linear infinite;
 `;
 
 export const ErrorIcon = styled(DangerIcon)`
-stroke:  ${({ theme }) => theme.svg.fill};
+  stroke: ${({ theme }) => theme.svg.fill};
 `;
 
 export const StyledLink = styled.a`
   background-color: ${({ theme }) => theme.primaryBlue.background};
   color: ${({ theme }) => theme.white.text};
-  padding: 12px 16px 12px 16px  ;
+  padding: 12px 16px 12px 16px;
   text-align: center;
   font-size: 20px;
   font-weight: 600;
@@ -31,29 +31,23 @@ export const StyledLink = styled.a`
 `;
 
 export const SubHeader = styled.h3`
-color: ${({ theme }) => theme.header.text};
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 1.2px;
-margin:0;
-margin-top:16px;
+  color: ${({ theme }) => theme.header.text};
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  margin: 0;
+  margin-top: 16px;
 `;
 
 export const LeadParagraph = styled.p`
-color: ${({ theme }) => theme.header.text};
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 1.4; 
-letter-spacing: 1px;
-margin-bottom: 32px;
-margin-top:32px;
+  color: ${({ theme }) => theme.header.text};
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  margin-bottom: 32px;
+  margin-top: 32px;
 `;
-
-
-
-
-
-  

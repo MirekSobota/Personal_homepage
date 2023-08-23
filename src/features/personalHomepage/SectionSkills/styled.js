@@ -29,7 +29,7 @@ export const SectionHeader = styled.h2`
     line-height: normal;
     letter-spacing: 0.9px;
   }
-`; 
+`;
 
 export const Divider = styled.div`
   max-width: 1151px;

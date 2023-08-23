@@ -6,16 +6,15 @@ import { ThemeSwitcher } from "./ThemeSwitcher/index";
 import { Portfolio } from "./Portfolio";
 import { Footer } from "./Footer";
 
-
 export const PersonalHomepage = () => {
-    return (
-        <Container>
-            <ThemeSwitcher />
-            <Header />
-            <SectionSkills title="My skill set includes 🛠️" content={skills} />
-            <SectionSkills title="What I want to learn next 🚀" content={toLearn} />
-            <Portfolio />
-            <Footer />
-        </Container>
-    )
+  return (
+    <Container>
+      <ThemeSwitcher />
+      <Header />
+      <SectionSkills title="My skill set includes 🛠️" content={skills} />
+      <SectionSkills title="What I want to learn next 🚀" content={toLearn} />
+      <Portfolio />
+      <Footer />
+    </Container>
+  );
 };

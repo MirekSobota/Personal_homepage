@@ -19,9 +19,11 @@ export const ThemeSwitcher = () => {
     <Container>
       <Wrapper>
         <Title>Dark mode {themeSwitch ? "off" : "on"}</Title>
-        <Button onClick={() => {
-          dispatch(toggleTheme());
-        }}>
+        <Button
+          onClick={() => {
+            dispatch(toggleTheme());
+          }}
+        >
           <Background />
           <Toggle $newProp={themeSwitch} />
           <Sun $newProp={themeSwitch} />

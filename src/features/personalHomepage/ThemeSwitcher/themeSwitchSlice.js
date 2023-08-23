@@ -7,18 +7,15 @@ const themeSwitchSlice = createSlice({
     theme: getThemeFromLocalStorage(),
   },
   reducers: {
-    toggleTheme: (state)=> {
-        state.theme = !state.theme;
+    toggleTheme: (state) => {
+      state.theme = !state.theme;
     },
   },
 });
 
-
-export const {
-    toggleTheme,
-} = themeSwitchSlice.actions;
+export const { toggleTheme } = themeSwitchSlice.actions;
 
 export const selectThemeSwitchState = (state) => state.themeSwitch;
 export const selectTheme = (state) => selectThemeSwitchState(state).theme;
 
-export default  themeSwitchSlice.reducer;
+export default themeSwitchSlice.reducer;

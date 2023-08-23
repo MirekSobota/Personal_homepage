@@ -1,7 +1,7 @@
 
 
 <div align="center">
-<h2>Hello and welcome🙋, I'm glad you checked out my page</h2>
+<h2>Hello and welcome🙋‍♂️, I'm glad you checked out my page</h2>
 </div>
 
 ### 📑 Table of contents:

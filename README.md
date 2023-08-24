@@ -25,7 +25,7 @@
 
 ## 🤙Demo:
 <a id="demo"></a> 
-[ Personal Home Page - Mirek Sobota  ](https://mireksobota.github.io/personal_homepage/)
+[ Personal Home Page - Mirek Sobota  ](https://mireksobota.github.io/personal-homepage/)
 
 <br/>
 

@@ -5,10 +5,6 @@ export const Container = styled.main`
   margin: auto;
   padding: 16px;
   padding-bottom: 0;
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
-    min-width: 450px;
-  }
 `;
 
 export const Wrapper = styled.div`
@@ -18,7 +14,6 @@ export const Wrapper = styled.div`
   padding-bottom: 109px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.iPad}) {
-    min-width: 450px;
     padding-bottom: 15px;
   }
 `;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { ReactComponent as BulletIcon } from "../../../common/assets/bulletLightTheme.svg";
+import { ReactComponent as BulletIcon } from "../../../assets/bulletLightTheme.svg";
 
 export const Wrapper = styled.section`
   max-width: 1216px;

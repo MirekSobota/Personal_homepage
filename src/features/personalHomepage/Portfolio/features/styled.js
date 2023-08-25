@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { ReactComponent as DangerIcon } from "../../../../common/assets/dangerIcon.svg";
+import { ReactComponent as DangerIcon } from "../../../../assets/dangerIcon.svg";
 
 const spinAnimation = keyframes`
   0% { transform: rotate(0deg); }

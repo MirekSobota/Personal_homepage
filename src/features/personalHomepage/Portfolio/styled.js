@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
-import { ReactComponent as GitHubIcon } from "../../../common/assets/github.svg";
+import { ReactComponent as GitHubIcon } from "../../../assets/github.svg";
 
 const fadeIn = keyframes`
     from {

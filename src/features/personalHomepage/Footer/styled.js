@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import { ReactComponent as GitHub } from "../../../common/assets/github.svg";
-import { ReactComponent as LinkedIn } from "../../../common/assets/linkedIn.svg";
+import { ReactComponent as GitHub } from "../../../assets/github.svg";
+import { ReactComponent as LinkedIn } from "../../../assets/linkedIn.svg";
 
 export const Container = styled.div`
   max-width: 700px;

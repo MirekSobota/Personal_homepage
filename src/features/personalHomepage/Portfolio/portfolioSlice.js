@@ -4,7 +4,7 @@ const portfolioSlice = createSlice({
   name: "portfolio",
   initialState: {
     repository: [],
-    status: "loading",
+    status: null,
   },
   reducers: {
     fetchDataFromGitHubLoad: (state) => {

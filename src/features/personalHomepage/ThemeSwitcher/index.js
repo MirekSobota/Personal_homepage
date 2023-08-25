@@ -25,8 +25,8 @@ export const ThemeSwitcher = () => {
           }}
         >
           <Background />
-          <Toggle $newProp={themeSwitch} />
-          <Sun $newProp={themeSwitch} />
+          <Toggle $newTheme={themeSwitch} />
+          <Sun $newTheme={themeSwitch} />
         </Button>
       </Wrapper>
     </Container>

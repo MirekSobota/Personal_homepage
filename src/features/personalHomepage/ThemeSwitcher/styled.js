@@ -53,7 +53,7 @@ export const Toggle = styled(ToggleIcon)`
   fill: ${({ theme }) => theme.svgTheme.fillToggle};
   transition: transform 0.3s ease;
   transform: ${(props) =>
-    props.$newProp ? "translate(-100%, -50%)" : "translate(0%, -50%)"};
+    props.$newTheme ? "translate(-100%, -50%)" : "translate(0%, -50%)"};
 `;
 
 export const Sun = styled(SunIcon)`
@@ -66,5 +66,5 @@ export const Sun = styled(SunIcon)`
   fill: ${({ theme }) => theme.svgTheme.fillSun};
   transition: transform 0.3s ease;
   transform: ${(props) =>
-    props.$newProp ? "translate(-120%, -50%)" : "translate(20%, -50%)"};
+    props.$newTheme ? "translate(-120%, -50%)" : "translate(20%, -50%)"};
 `;

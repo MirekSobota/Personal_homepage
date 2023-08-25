@@ -19,8 +19,8 @@ import {
   selectRepositoryState,
   selectStatus,
 } from "./portfolioSlice";
-import { Loading } from "./features/loading";
-import { ErrorMessage } from "./features//errorMsg";
+import { Loading } from "./state/loading";
+import { ErrorMessage } from "./state/errorMsg";
 
 export const Portfolio = () => {
   const dispatch = useDispatch();

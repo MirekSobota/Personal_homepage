@@ -21,7 +21,7 @@ export const Header = () => {
           <ThisIs>This is</ThisIs>
           <Name>Mirek Sobota</Name>
           <Content>
-            👨🏻‍💻 I am a Junior Frontend Developer seeking new challenges in
+            👨🏻‍💻 I am a Frontend Developer with almost one year of experience seeking new challenges in
             programming. Currently, I'm working with React, but I'm interested
             in exploring new technologies to enhance my skills and become a
             better programmer. looking for new job opportunities.{" "}
@@ -33,7 +33,7 @@ export const Header = () => {
               rel="noopener noreferrer"
             >
               <EmailIcon />
-              HireMe
+              Ask me anything!
             </HireMe>
           </HireMeButton>
         </About>

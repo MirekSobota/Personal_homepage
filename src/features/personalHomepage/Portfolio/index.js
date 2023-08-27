@@ -59,11 +59,11 @@ export const Portfolio = () => {
             <Description>{repo.description}</Description>
             <Paragraph>
               Code:{" "}
-              <StyledLink href={repo.html_url}>{repo.html_url}</StyledLink>{" "}
+              <StyledLink href={repo.html_url} target="_blank" rel="noopener noreferrer">{repo.html_url}</StyledLink>
             </Paragraph>
             <Paragraph>
               Demo:{" "}
-              <StyledLink href={repo.homepage}>{repo.homepage}</StyledLink>{" "}
+              <StyledLink href={repo.homepage} target="_blank" rel="noopener noreferrer">{repo.homepage}</StyledLink>
             </Paragraph>
           </StyledListItem>
         ))}

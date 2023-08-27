@@ -21,6 +21,7 @@ import {
 } from "./portfolioSlice";
 import { Loading } from "./state/loading";
 import { ErrorMessage } from "./state/errorMsg";
+import {repositoryToDisplay} from "./repositoryToDisplay";
 
 export const Portfolio = () => {
   const dispatch = useDispatch();
@@ -29,6 +30,8 @@ export const Portfolio = () => {
   useEffect(() => {
     dispatch(fetchDataFromGitHubLoad());
   }, [dispatch]);
+
+  const filteredRepos = repositories.filter(repo => repositoryToDisplay.includes(repo.name));
 
   return status === "loading" ? (
     <Wrapper>
@@ -50,7 +53,7 @@ export const Portfolio = () => {
       <Header>Portfolio</Header>
       <SubTitle>My recent projects</SubTitle>
       <StyledList>
-        {repositories.map((repo, index) => (
+        {filteredRepos.map((repo, index) => (
           <StyledListItem key={repo.id} delay={Math.floor(index / 2) * 0.5}>
             <SubHeader>{repo.name}</SubHeader>
             <Description>{repo.description}</Description>
